@@ -54,6 +54,8 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+Looking at the numerical results, we can tell that those who ended up with aids which is about 58.2% had taken the drug. And 41% had taken the placebo. Therefore, in the group where no one ended up with aids, was almost an equal amount, 48 to 51. The second column tells us the overall people that took the drug and ended up with aids which was about 3.7%.
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
@@ -63,6 +65,15 @@ chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
 ```
+
+According to the inferential results, we are given data that tells us the odds of getting aids if you take the drug. So, if you are a female, the odds of getting aids from taking this drug are one and a half to one. This is very high which indicates that the drug is not effective in preventing aids for the females.
+
+
+# Discussion and Conclusion
+
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusion, we were able to run a lot of data and tests to conclude that the drug is not working for the females. This is not good news for the females. 
 
 #males
 ```{r}
