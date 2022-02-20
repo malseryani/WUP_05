@@ -126,6 +126,17 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+According to the inferential results, if we  look at the fisher exact test. The odds that you would end up getting aids if you are a male are 0.45 to 1. This is reducing the odds for getting aids for the males. 
+
+# Discussion and Conclusion
+
+<!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+Based off the data and all the tests we ran, it is clear that the drug worked for the males. In fact, there was a significant difference of the drugs effectiveness for the males vs the females. In the females results, the drug was not effective however, for the males it is very effective. 
+
+
+
+
 #drugusers
 
 ```{r}
@@ -139,6 +150,8 @@ barchartGC(~infected + treatment,data=DrugUser, type="percent")
 
 ```
 
+According to the graphical results, we can see that barely any of the people that took the drug got aids. This indicates that the drug must be effective. We can see the dramatic difference between the drug vs the placebo. 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -148,6 +161,8 @@ table1 <- xtabs(~infected + treatment, data=DrugUser)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+Looking at the numerical results, we can see that only 2.89 of people that got the drug got aids which is very low compared to the placebo which is 7.77. 
 
 ## Inferential Results
 
@@ -159,6 +174,10 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
+Based off of the inferential results, if you are a drug user and you take the drug, the odds of you getting aids are 0.35 to 1. This tells us that the drug is doing a decent job. We can also verify these results by looking at the chi square test. 
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+In conclusion, the drug to prevent aids for the drug users was very effective in the drug user community. Therefore, the drug was decent and good for this community. 
