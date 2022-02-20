@@ -160,7 +160,7 @@ barchartGC(~infected + treatment,data=LGBTQ)
 barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 ```
 
-According to this data, we. can see that the drug is not effective for the LGBTQ community. 
+According to this data, we can see that the drug is not effective for the LGBTQ community. 
 
 ## Numerical Descriptive Results
 
@@ -169,3 +169,21 @@ table1 <- xtabs(~infected + treatment, data=LGBTQ)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+Looking at the numerical results for the LGBTQ community, we can see that 72.38% had ended up with aids after taking the drug. This is very high and proves that the drug was not effective for them.
+
+## Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+From the inferential results, we can see that the odds of an LGBTQ person getting aids is about two and three quarters to one. This is very high and proves that the drug does not prevent aids for the LGBTQ community. 
+
+# Discussion and Conclusion
+
+In conclusion, the drug for preventing aids was not effective for the LGBTQ community. The odds of getting aids from taking the drug for an LGBTQ person was very high and therefore not effective in preventing aids. So if you are an LGBTQ person, and you take this drug, you are very likely to end up getting aids. 
+
+
